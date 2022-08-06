@@ -1,0 +1,36 @@
+/.vscode/
+/bazel.iml
+# Ignore all bazel-* symlinks. There is no full list since this can change
+# based on the name of the directory bazel is cloned into.
+/bazel-*
+# Ignore outputs generated during Bazel bootstrapping.
+/output/
+# Bazelisk version file
+.bazelversion
+# User-specific .bazelrc
+user.bazelrc
+/external
+xchammer-includes/*
+
+# Xcode
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+*.profraw
+
+# MAC OS X
+.DS_Store
+Thumbs.db

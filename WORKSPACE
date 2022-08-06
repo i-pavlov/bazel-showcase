@@ -1,10 +1,10 @@
 load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository")
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive", "http_file")
 
-git_repository(
+http_archive(
     name = "com_github_buildbuddy_io_rules_xcodeproj",
-    remote = "git@github.com:buildbuddy-io/rules_xcodeproj.git",
-    commit = "fd0e381dc79550dddce91b494c81dc62569e848e"
+    sha256 = "a647ad9ee6664a78377cf5707331966b6788be09d1fea48045a61bc450c8f1b1",
+    url = "https://github.com/buildbuddy-io/rules_xcodeproj/releases/download/0.7.0/release.tar.gz",
 )
 
 load(
@@ -41,10 +41,3 @@ load(
 )
 
 apple_support_dependencies()
-
-# Remote repo
-git_repository(
-    name = "bazel_remote_repo",
-    commit = "6ab591c7f9835cc6b48ec616e217e01725e44de5",
-    remote = "git@github.com:i-pavlov/bazel-remote.git",
-)

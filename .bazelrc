@@ -1,0 +1,1 @@
+build --swiftcopt=-j --swiftcopt=12
